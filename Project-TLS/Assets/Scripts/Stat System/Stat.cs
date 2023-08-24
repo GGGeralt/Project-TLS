@@ -1,15 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class Stat
 {
-    public float value;
+    public int value;
     public List<StatModifier> modifiers;
 
-    public float CalculateFinalValue()
+    public int CalculateFinalValue()
     {
-        float finalValue = value;
+        int finalValue = value;
         foreach (StatModifier statMod in modifiers)
         {
             finalValue += statMod.value;

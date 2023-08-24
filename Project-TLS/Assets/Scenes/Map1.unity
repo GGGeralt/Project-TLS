@@ -701,7 +701,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7c69bf489039f45be5e39fd927c72c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ability: {fileID: 11400000, guid: b83a3e27f18856241a869a25ceab4fe0, type: 2}
+  health:
+    maximumValue:
+      value: 0
+      modifiers: []
+    currentValue: 0
+  movementSpeed:
+    value: 0
+    modifiers: []
+  ability: {fileID: 11400000, guid: d6916af7d8197744eb7eefb5b65005b5, type: 2}
 --- !u!1 &1164417955
 GameObject:
   m_ObjectHideFlags: 0

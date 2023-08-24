@@ -6,5 +6,6 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class Creature : MonoBehaviour
 {
-    
+    public StatChangeable health;
+    public Stat movementSpeed;
 }

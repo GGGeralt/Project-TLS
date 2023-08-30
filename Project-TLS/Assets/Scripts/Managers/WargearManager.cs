@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class WargearManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Wargear wargear;
+    public Item item;
+
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            wargear.item1 = item;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnApplicationQuit()
     {
-        
+        //wargear.item1 = null;
     }
 }
